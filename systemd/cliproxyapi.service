@@ -1,0 +1,19 @@
+[Unit]
+Description=CLIProxyAPI v8 private upstream for AIMP model router
+After=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/.local/share/cliproxyapi-v8.0.73
+ExecStart=%h/.local/share/cliproxyapi-v8.0.73/bin/cli-proxy-api -config %h/.local/share/cliproxyapi-v8.0.73/runtime/config.json
+Restart=on-failure
+RestartSec=3
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=%h/.local/share/cliproxyapi-v8.0.73/runtime
+
+[Install]
+WantedBy=default.target
