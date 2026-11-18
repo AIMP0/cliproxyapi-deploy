@@ -1,3 +1,11 @@
+# 已迁移：请使用 Model Router
+
+本仓库已合并至 **[HaoGuoo/model-router](https://github.com/HaoGuoo/model-router)**，后续开发与问题反馈请到新仓库。
+
+新仓库包含原部署组件（`deploy/cliproxyapi/`）、模型路由，以及可配置 IP / 端口的账号余额管理页面。本仓库保留原有历史，作为只读归档。
+
+---
+
 # CLIProxyAPI 私有部署
 
 保存丽萨服务器上 CLIProxyAPI 的部署配置与重建步骤。上游程序使用 [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) 的 **v8.0.73 Linux amd64** 发行版，本仓库不是上游源码 fork，也没有修改其程序。
